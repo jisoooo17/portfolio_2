@@ -1,0 +1,947 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300&family=Noto+Sans+KR:wght@100&display=swap");
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse; }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+fieldset {
+  border: none; }
+
+#header {
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+  #header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative; }
+    #header .inner h1 {
+      position: absolute;
+      left: 0px;
+      bottom: 15px; }
+      #header .inner h1 a {
+        font: bold 24px/1 "arial";
+        color: #444; }
+    #header .inner .util {
+      position: absolute;
+      top: 20px;
+      right: 0px; }
+      #header .inner .util li {
+        float: left; }
+        #header .inner .util li a {
+          display: block;
+          font: 12px/1 "arial";
+          color: #999;
+          padding: 0px 10px;
+          border-right: 1px solid #aaa; }
+        #header .inner .util li:last-child a {
+          border-right: none; }
+    #header .inner #gnb {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+      #header .inner #gnb li {
+        float: left; }
+        #header .inner #gnb li a {
+          display: block;
+          font: bold 15px/1 "arial";
+          color: #555;
+          padding: 20px 40px;
+          transition: all 0.5s; }
+          #header .inner #gnb li a:hover {
+            background: #555;
+            color: #fff; }
+
+#visual {
+  width: 100%;
+  height: 700px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  padding-top: 250px; }
+  #visual .inner {
+    width: 1180px;
+    margin: 0px auto;
+    position: relative; }
+
+#info {
+  padding: 100px 0px; }
+  #info .inner {
+    width: 1180px;
+    margin: 0px auto; }
+  #info h1 {
+    font: normal 30px/1 'Khula', sans-serif;
+    text-align: center;
+    margin-bottom: 20px; }
+  #info h2 {
+    font: normal 14px/1 'Noto Sans KR', sans-serif;
+    text-align: center;
+    margin-bottom: 70px; }
+  #info::after {
+    content: "";
+    display: block;
+    clear: both; }
+  #info ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #info ul li {
+      width: 49%;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      position: relative; }
+      #info ul li:nth-of-type(5), #info ul li:nth-of-type(6) {
+        border-bottom: 1px solid #ddd; }
+      #info ul li .pictogram {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px; }
+        #info ul li .pictogram svg {
+          width: 100%;
+          height: 100%;
+          overflow: visible; }
+          #info ul li .pictogram svg path {
+            stroke: #e2ab15;
+            stroke-width: 15;
+            fill: transparent;
+            transition: 1s; }
+            #info ul li .pictogram svg path:nth-of-type(1) {
+              stroke-dasharray: 1780;
+              stroke-dashoffset: 1780; }
+            #info ul li .pictogram svg path:nth-of-type(2) {
+              stroke-dasharray: 1380;
+              stroke-dashoffset: 1380; }
+            #info ul li .pictogram svg path:nth-of-type(3) {
+              stroke-dasharray: 1750;
+              stroke-dashoffset: 1750; }
+            #info ul li .pictogram svg path:nth-of-type(4) {
+              stroke-dasharray: 1700;
+              stroke-dashoffset: 1700; }
+            #info ul li .pictogram svg path:nth-of-type(5) {
+              stroke-dasharray: 1580;
+              stroke-dashoffset: 1580; }
+            #info ul li .pictogram svg path:nth-of-type(6) {
+              stroke-dasharray: 1770;
+              stroke-dashoffset: 1770; }
+      #info ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #555;
+        position: relative;
+        padding: 20px; }
+        #info ul li a span {
+          margin-left: 30px;
+          font: bold 14px/50px 'Noto Sans KR', sans-serif;
+          flex: 3; }
+        #info ul li a p {
+          display: inline-block;
+          font: bold 12px/1.5 'Noto Sans KR', sans-serif;
+          flex: 2;
+          position: absolute;
+          top: 50%;
+          left: 200px;
+          margin-top: -20px;
+          margin-right: 22px; }
+
+#story {
+  padding: 100px 0px 120px;
+  background: #efefef; }
+  #story .inner {
+    width: 1180px;
+    margin: 0px auto; }
+    #story .inner::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #story .inner .left {
+      float: left;
+      width: 580px;
+      margin-right: 20px;
+      padding: 0px 70px 0px 0px; }
+      #story .inner .left span {
+        font: 14px/1 'Khula', sans-serif;
+        color: #777;
+        position: relative; }
+        #story .inner .left span::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 1px;
+          background: #000;
+          margin-top: 28px; }
+      #story .inner .left h1 {
+        font: normal 30px/1.3 'Khula', sans-serif;
+        margin-top: 60px;
+        margin-bottom: 20px; }
+      #story .inner .left p {
+        font: 14px/2  'Khula', sans-serif;
+        color: #777;
+        margin-bottom: 40px; }
+      #story .inner .left a {
+        display: block;
+        font: 12px/1 'Lato', sans-serif;
+        color: #777;
+        text-align: right;
+        transition: 0.5s;
+        position: relative; }
+        #story .inner .left a::after {
+          content: "";
+          display: block;
+          width: 0px;
+          height: 1px;
+          background: #000;
+          position: absolute;
+          bottom: 0px;
+          left: 452px;
+          margin: -4px auto;
+          opacity: 0;
+          transition: 0.5s;
+          text-align: right; }
+        #story .inner .left a:hover {
+          color: #000; }
+          #story .inner .left a:hover::after {
+            width: 58px;
+            opacity: 1; }
+    #story .inner .right {
+      position: relative; }
+      #story .inner .right img {
+        width: 370px;
+        height: 200px;
+        object-fit: cover; }
+        #story .inner .right img:nth-of-type(1) {
+          position: absolute; }
+        #story .inner .right img:nth-of-type(2) {
+          position: absolute;
+          top: 120px;
+          right: 0px; }
+
+#brand {
+  padding: 100px 0px; }
+  #brand .inner {
+    width: 1180px;
+    margin: 0px auto; }
+    #brand .inner h1 {
+      font: normal 30px/1 'Khula', sans-serif;
+      text-align: center;
+      margin-bottom: 20px; }
+    #brand .inner > p {
+      font: normal 14px/1.5 'Khula', sans-serif;
+      text-align: center;
+      padding: 0px 250px;
+      color: #777;
+      margin-bottom: 50px; }
+    #brand .inner .wrap {
+      position: relative;
+      text-align: center;
+      margin: 0px auto; }
+      #brand .inner .wrap::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #brand .inner .wrap article {
+        float: left;
+        margin: 0px auto; }
+        #brand .inner .wrap article span {
+          font: 12px/1 'Khula', sans-serif;
+          color: #fff; }
+        #brand .inner .wrap article p {
+          font: bold 20px/1 'Khula', sans-serif;
+          color: #fff;
+          margin-top: 10px; }
+        #brand .inner .wrap article.brand1 {
+          padding: 90px 0px;
+          width: 800px;
+          height: 300px;
+          margin-bottom: 20px;
+          margin-left: 190px;
+          position: relative;
+          background: url(../img/brand1.jpg) no-repeat center/cover;
+          transition: 0.5s; }
+          #brand .inner .wrap article.brand1 a {
+            display: block;
+            width: 100px;
+            height: 25px;
+            margin: 0px auto;
+            font: bold 10px/25px 'Noto Sans KR', sans-serif;
+            color: #fff;
+            border: 1px solid #fff;
+            margin-top: 25px;
+            transition: 0.5s;
+            box-sizing: content-box; }
+            #brand .inner .wrap article.brand1 a:hover {
+              background: #fff;
+              color: #000; }
+        #brand .inner .wrap article.brand2 {
+          padding: 55px 0px;
+          width: 390px;
+          height: 200px;
+          margin-left: 190px;
+          margin-right: 20px;
+          background: url(../img/brand2.jpg) no-repeat center/cover;
+          position: relative; }
+          #brand .inner .wrap article.brand2 .frame {
+            background: #fff;
+            width: 300px;
+            height: 130px;
+            padding: 20px;
+            position: absolute;
+            top: 40px;
+            left: 45px; }
+            #brand .inner .wrap article.brand2 .frame span {
+              font: 12px/1 'Khula', sans-serif;
+              margin-bottom: 10px;
+              color: #000; }
+            #brand .inner .wrap article.brand2 .frame p {
+              font: bold 16px/1 'Noto Sans KR', sans-serif;
+              margin-bottom: 10px;
+              color: #000; }
+            #brand .inner .wrap article.brand2 .frame a {
+              font: bold 10px/1 'Noto Sans KR', sans-serif;
+              color: #aaa;
+              position: relative;
+              transition: 0.5s; }
+              #brand .inner .wrap article.brand2 .frame a::after {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 1px;
+                background: #555;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                margin: -2px auto;
+                opacity: 0;
+                transition: 0.5s; }
+              #brand .inner .wrap article.brand2 .frame a:hover {
+                color: #000; }
+                #brand .inner .wrap article.brand2 .frame a:hover::after {
+                  width: 49px;
+                  opacity: 1; }
+        #brand .inner .wrap article.brand3 {
+          padding: 60px 0px;
+          width: 390px;
+          height: 200px;
+          margin-right: 20px;
+          position: relative;
+          background: url(../img/brand.jpg) no-repeat center/cover; }
+          #brand .inner .wrap article.brand3 span {
+            font: 12px/1  'Khula', sans-serif;
+            margin-bottom: 10px;
+            color: #fff; }
+          #brand .inner .wrap article.brand3 p {
+            font: bold 16px/1  'Khula', sans-serif;
+            margin-bottom: 10px;
+            color: #fff; }
+          #brand .inner .wrap article.brand3 a {
+            font: bold 10px/1  'Noto Sans KR', sans-serif;
+            color: #ccc;
+            position: relative;
+            transition: 0.5s; }
+            #brand .inner .wrap article.brand3 a::after {
+              content: "";
+              display: block;
+              width: 0px;
+              height: 1px;
+              background: #fff;
+              position: absolute;
+              bottom: 0px;
+              left: 0px;
+              margin: -2px auto;
+              opacity: 0;
+              transition: 0.5s; }
+            #brand .inner .wrap article.brand3 a:hover {
+              color: #fff; }
+              #brand .inner .wrap article.brand3 a:hover::after {
+                width: 49px;
+                opacity: 1; }
+
+#news {
+  padding: 100px 0px; }
+  #news h1 {
+    font: normal 30px/1 'Khula', sans-serif;
+    text-align: center;
+    margin-bottom: 50px; }
+  #news .wrap {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px; }
+    #news .wrap .banner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      bottom: 0px; }
+      #news .wrap .banner .list li {
+        float: left;
+        font-size: 0;
+        transition: 0.5s; }
+        #news .wrap .banner .list li:hover {
+          opacity: 1; }
+        #news .wrap .banner .list li a {
+          display: block;
+          width: 530px;
+          height: 200px;
+          object-fit: cover;
+          position: relative;
+          padding: 0px 20px; }
+          #news .wrap .banner .list li a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 15px; }
+          #news .wrap .banner .list li a span:nth-of-type(1) {
+            font: bold 14px/1 'Khula', sans-serif;
+            color: #000; }
+          #news .wrap .banner .list li a span:nth-of-type(2) {
+            font: 12px/1 'Khula', sans-serif;
+            color: #999;
+            position: absolute;
+            bottom: -50px;
+            right: 20px; }
+          #news .wrap .banner .list li a p {
+            font: 12px/1 'Khula', sans-serif;
+            color: #777;
+            margin-top: 10px; }
+          #news .wrap .banner .list li a::after {
+            content: "";
+            display: block;
+            width: 490px;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            background: #000;
+            opacity: 0.5;
+            transition: 0.5s; }
+          #news .wrap .banner .list li a:hover::after {
+            opacity: 0; }
+      #news .wrap .banner .prev {
+        position: absolute;
+        left: -120px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: 0.5s; }
+      #news .wrap .banner .next {
+        position: absolute;
+        right: -120px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: 0.5s; }
+      #news .wrap .banner:hover .prev {
+        opacity: 1;
+        left: 20px; }
+      #news .wrap .banner:hover .next {
+        opacity: 1;
+        right: 20px; }
+  #news .inner {
+    width: 1180px;
+    margin: 0px auto; }
+    #news .inner ul {
+      margin-bottom: 40px; }
+      #news .inner ul li:nth-of-type(1) a {
+        border-top: 1px solid #ddd; }
+      #news .inner ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #777;
+        padding: 20px 30px;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        transition: 0.5s;
+        font: 16px/1 'Khula', sans-serif; }
+        #news .inner ul li a span:nth-of-type(1) {
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 60px;
+          height: 22px;
+          color: #777;
+          font: 10px/22px "arial";
+          text-align: center;
+          margin-right: 20px;
+          transition: 0.5s; }
+        #news .inner ul li a span:nth-of-type(2) {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font: 14px/1  'Khula', sans-serif;
+          color: #aaa;
+          transition: 0.5s; }
+        #news .inner ul li a p {
+          display: inline-block; }
+        #news .inner ul li a:hover {
+          background: #efefef;
+          color: #000; }
+          #news .inner ul li a:hover span:nth-of-type(1) {
+            border: 1px solid #ccc;
+            color: #000;
+            background: #fff; }
+          #news .inner ul li a:hover span:nth-of-type(2) {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font: 14px/1  'Khula', sans-serif;
+            color: #000; }
+    #news .inner > a {
+      display: block;
+      width: 100px;
+      height: 30px;
+      font: 10px/30px  'Noto Sans KR', sans-serif;
+      color: #999;
+      border: 1px solid #999;
+      text-align: center;
+      margin: 0px auto;
+      transition: 0.5s; }
+      #news .inner > a:hover {
+        color: #000;
+        border: 1px solid #000; }
+
+#footer {
+  width: 100%;
+  background: #444;
+  padding: 100px 0px; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0px auto; }
+    #footer .inner .upper {
+      width: 100%;
+      border-bottom: 1px solid #777;
+      padding-bottom: 20px; }
+      #footer .inner .upper::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #footer .inner .upper h1 {
+        float: left;
+        font: bold 24px/1 "arial";
+        color: #666; }
+      #footer .inner .upper ul {
+        float: right; }
+        #footer .inner .upper ul li {
+          float: left;
+          margin-left: 20px; }
+          #footer .inner .upper ul li a {
+            font: bold 14px/1 "arial";
+            color: #666; }
+    #footer .inner .lower {
+      width: 100%;
+      padding-top: 20px; }
+      #footer .inner .lower address {
+        width: 100%;
+        font: 12px/1.3 "arial";
+        color: #777;
+        margin-bottom: 20px; }
+      #footer .inner .lower p {
+        width: 100%;
+        font: 12px/1 "arial";
+        color: #777; }
+
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%; }
+    #header .inner #gnb li a {
+      font: bold 14px/1 "arial";
+      padding: 20px; }
+
+  #visual {
+    height: 500px; }
+    #visual .inner {
+      width: 1180px;
+      margin: 0px auto;
+      position: relative; }
+
+  #info {
+    padding: 70px 20px; }
+    #info .inner {
+      width: 100%;
+      margin: 0px auto; }
+    #info h2 {
+      margin-bottom: 50px; }
+    #info ul li a {
+      padding: 15px 20px;
+      position: relative; }
+      #info ul li a span {
+        margin-left: 10px;
+        font: bold 14px/50px 'Noto Sans KR', sans-serif; }
+      #info ul li a p {
+        left: 130px;
+        margin-right: 10px;
+        font: bold 12px/1.5 'Noto Sans KR', sans-serif; }
+
+  #story {
+    padding: 70px 20px; }
+    #story .inner {
+      width: 100%; }
+      #story .inner .left {
+        width: 49%;
+        margin-right: 2%;
+        padding: 0px 50px 0px 0px; }
+        #story .inner .left h1 {
+          font: normal 25px/1.5 'Khula', sans-serif; }
+      #story .inner .right {
+        position: relative; }
+        #story .inner .right img {
+          width: 38vw;
+          height: 180px;
+          object-fit: cover; }
+          #story .inner .right img:nth-of-type(1) {
+            top: 50px; }
+          #story .inner .right img:nth-of-type(2) {
+            top: 150px; }
+
+  #brand {
+    padding: 100px 0px; }
+    #brand .inner {
+      width: 1180px;
+      margin: 0px auto; }
+      #brand .inner h1 {
+        font: normal 30px/1 'Khula', sans-serif;
+        text-align: center;
+        margin-bottom: 20px; }
+      #brand .inner > p {
+        font: normal 14px/1.5 'Khula', sans-serif;
+        text-align: center;
+        padding: 0px 250px;
+        color: #777;
+        margin-bottom: 50px; }
+      #brand .inner .wrap {
+        position: relative;
+        text-align: center;
+        margin: 0px auto; }
+        #brand .inner .wrap::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #brand .inner .wrap article {
+          float: left;
+          margin: 0px auto; }
+          #brand .inner .wrap article span {
+            font: 12px/1 'Khula', sans-serif;
+            color: #fff; }
+          #brand .inner .wrap article p {
+            font: bold 20px/1 'Khula', sans-serif;
+            color: #fff;
+            margin-top: 10px; }
+          #brand .inner .wrap article.brand1 {
+            padding: 90px 0px;
+            width: 800px;
+            height: 300px;
+            margin-bottom: 20px;
+            margin-left: 190px;
+            position: relative;
+            background: url(../img/brand1.jpg) no-repeat center/cover;
+            transition: 0.5s; }
+            #brand .inner .wrap article.brand1 a {
+              display: block;
+              width: 100px;
+              height: 25px;
+              margin: 0px auto;
+              font: bold 10px/25px 'Noto Sans KR', sans-serif;
+              color: #fff;
+              border: 1px solid #fff;
+              margin-top: 25px;
+              transition: 0.5s;
+              box-sizing: content-box; }
+              #brand .inner .wrap article.brand1 a:hover {
+                background: #fff;
+                color: #000; }
+          #brand .inner .wrap article.brand2 {
+            padding: 55px 0px;
+            width: 390px;
+            height: 200px;
+            margin-left: 190px;
+            margin-right: 20px;
+            background: url(../img/brand2.jpg) no-repeat center/cover;
+            position: relative; }
+            #brand .inner .wrap article.brand2 .frame {
+              background: #fff;
+              width: 300px;
+              height: 130px;
+              padding: 20px;
+              position: absolute;
+              top: 40px;
+              left: 45px; }
+              #brand .inner .wrap article.brand2 .frame span {
+                font: 12px/1 'Khula', sans-serif;
+                margin-bottom: 10px;
+                color: #000; }
+              #brand .inner .wrap article.brand2 .frame p {
+                font: bold 16px/1 'Noto Sans KR', sans-serif;
+                margin-bottom: 10px;
+                color: #000; }
+              #brand .inner .wrap article.brand2 .frame a {
+                font: bold 10px/1 'Noto Sans KR', sans-serif;
+                color: #aaa;
+                position: relative;
+                transition: 0.5s; }
+                #brand .inner .wrap article.brand2 .frame a::after {
+                  content: "";
+                  display: block;
+                  width: 0px;
+                  height: 1px;
+                  background: #555;
+                  position: absolute;
+                  bottom: 0px;
+                  left: 0px;
+                  margin: -2px auto;
+                  opacity: 0;
+                  transition: 0.5s; }
+                #brand .inner .wrap article.brand2 .frame a:hover {
+                  color: #000; }
+                  #brand .inner .wrap article.brand2 .frame a:hover::after {
+                    width: 49px;
+                    opacity: 1; }
+          #brand .inner .wrap article.brand3 {
+            padding: 60px 0px;
+            width: 390px;
+            height: 200px;
+            margin-right: 20px;
+            position: relative;
+            background: url(../img/brand.jpg) no-repeat center/cover; }
+            #brand .inner .wrap article.brand3 span {
+              font: 12px/1  'Khula', sans-serif;
+              margin-bottom: 10px;
+              color: #fff; }
+            #brand .inner .wrap article.brand3 p {
+              font: bold 16px/1  'Khula', sans-serif;
+              margin-bottom: 10px;
+              color: #fff; }
+            #brand .inner .wrap article.brand3 a {
+              font: bold 10px/1  'Noto Sans KR', sans-serif;
+              color: #ccc;
+              position: relative;
+              transition: 0.5s; }
+              #brand .inner .wrap article.brand3 a::after {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 1px;
+                background: #fff;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                margin: -2px auto;
+                opacity: 0;
+                transition: 0.5s; }
+              #brand .inner .wrap article.brand3 a:hover {
+                color: #fff; }
+                #brand .inner .wrap article.brand3 a:hover::after {
+                  width: 49px;
+                  opacity: 1; }
+
+  #news {
+    padding: 100px 0px; }
+    #news h1 {
+      font: normal 30px/1 'Khula', sans-serif;
+      text-align: center;
+      margin-bottom: 50px; }
+    #news .wrap {
+      width: 100%;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 100px; }
+      #news .wrap .banner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px; }
+        #news .wrap .banner .list li {
+          float: left;
+          font-size: 0;
+          transition: 0.5s; }
+          #news .wrap .banner .list li:hover {
+            opacity: 1; }
+          #news .wrap .banner .list li a {
+            display: block;
+            width: 530px;
+            height: 200px;
+            object-fit: cover;
+            position: relative;
+            padding: 0px 20px; }
+            #news .wrap .banner .list li a img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              margin-bottom: 15px; }
+            #news .wrap .banner .list li a span:nth-of-type(1) {
+              font: bold 14px/1 'Khula', sans-serif;
+              color: #000; }
+            #news .wrap .banner .list li a span:nth-of-type(2) {
+              font: 12px/1 'Khula', sans-serif;
+              color: #999;
+              position: absolute;
+              bottom: -50px;
+              right: 20px; }
+            #news .wrap .banner .list li a p {
+              font: 12px/1 'Khula', sans-serif;
+              color: #777;
+              margin-top: 10px; }
+            #news .wrap .banner .list li a::after {
+              content: "";
+              display: block;
+              width: 490px;
+              height: 100%;
+              position: absolute;
+              top: 0px;
+              left: 20px;
+              background: #000;
+              opacity: 0.5;
+              transition: 0.5s; }
+            #news .wrap .banner .list li a:hover::after {
+              opacity: 0; }
+        #news .wrap .banner .prev {
+          position: absolute;
+          left: -120px;
+          top: 50%;
+          transform: translateY(-50%);
+          opacity: 0;
+          transition: 0.5s; }
+        #news .wrap .banner .next {
+          position: absolute;
+          right: -120px;
+          top: 50%;
+          transform: translateY(-50%);
+          opacity: 0;
+          transition: 0.5s; }
+        #news .wrap .banner:hover .prev {
+          opacity: 1;
+          left: 20px; }
+        #news .wrap .banner:hover .next {
+          opacity: 1;
+          right: 20px; }
+    #news .inner {
+      width: 1180px;
+      margin: 0px auto; }
+      #news .inner ul {
+        margin-bottom: 40px; }
+        #news .inner ul li:nth-of-type(1) a {
+          border-top: 1px solid #ddd; }
+        #news .inner ul li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #777;
+          padding: 20px 30px;
+          position: relative;
+          border-bottom: 1px solid #ddd;
+          transition: 0.5s;
+          font: 16px/1 'Khula', sans-serif; }
+          #news .inner ul li a span:nth-of-type(1) {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 60px;
+            height: 22px;
+            color: #777;
+            font: 10px/22px "arial";
+            text-align: center;
+            margin-right: 20px;
+            transition: 0.5s; }
+          #news .inner ul li a span:nth-of-type(2) {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font: 14px/1  'Khula', sans-serif;
+            color: #aaa;
+            transition: 0.5s; }
+          #news .inner ul li a p {
+            display: inline-block; }
+          #news .inner ul li a:hover {
+            background: #efefef;
+            color: #000; }
+            #news .inner ul li a:hover span:nth-of-type(1) {
+              border: 1px solid #ccc;
+              color: #000;
+              background: #fff; }
+            #news .inner ul li a:hover span:nth-of-type(2) {
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              font: 14px/1  'Khula', sans-serif;
+              color: #000; }
+      #news .inner > a {
+        display: block;
+        width: 100px;
+        height: 30px;
+        font: 10px/30px  'Noto Sans KR', sans-serif;
+        color: #999;
+        border: 1px solid #999;
+        text-align: center;
+        margin: 0px auto;
+        transition: 0.5s; }
+        #news .inner > a:hover {
+          color: #000;
+          border: 1px solid #000; }
+
+  #footer {
+    width: 100%;
+    background: #444;
+    padding: 100px 0px; }
+    #footer .inner {
+      width: 1180px;
+      margin: 0px auto; }
+      #footer .inner .upper {
+        width: 100%;
+        border-bottom: 1px solid #777;
+        padding-bottom: 20px; }
+        #footer .inner .upper::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #footer .inner .upper h1 {
+          float: left;
+          font: bold 24px/1 "arial";
+          color: #666; }
+        #footer .inner .upper ul {
+          float: right; }
+          #footer .inner .upper ul li {
+            float: left;
+            margin-left: 20px; }
+            #footer .inner .upper ul li a {
+              font: bold 14px/1 "arial";
+              color: #666; }
+      #footer .inner .lower {
+        width: 100%;
+        padding-top: 20px; }
+        #footer .inner .lower address {
+          width: 100%;
+          font: 12px/1.3 "arial";
+          color: #777;
+          margin-bottom: 20px; }
+        #footer .inner .lower p {
+          width: 100%;
+          font: 12px/1 "arial";
+          color: #777; } }
+
+/*# sourceMappingURL=style.css.map */
