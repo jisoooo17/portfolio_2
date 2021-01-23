@@ -14,7 +14,7 @@ $(document).ready(function(){
 
             if(result < 0 ) result = 0;  
 
-            var bg = scroll/6000;            
+            var bg = scroll/5000;            
 
         //    if(bg > 0.8) bg = 0.8;
 
