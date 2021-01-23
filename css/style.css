@@ -531,11 +531,11 @@ fieldset {
             color: #000; }
     #news .inner > a {
       display: block;
-      width: 100px;
+      width: 80px;
       height: 30px;
-      font: 10px/30px  'Noto Sans KR', sans-serif;
+      font: bold 10px/30px  'Noto Sans KR', sans-serif;
       color: #999;
-      border: 1px solid #999;
+      border: 1px solid #aaa;
       text-align: center;
       margin: 0px auto;
       transition: 0.5s; }
@@ -658,7 +658,8 @@ fieldset {
         width: 80%;
         height: 270px; }
         #brand .inner .wrap .brand1 a {
-          margin-top: 15px; }
+          margin-top: 15px;
+          width: 80px; }
       #brand .inner .wrap .wrap2 {
         width: 80%; }
         #brand .inner .wrap .wrap2 .brand2 {
