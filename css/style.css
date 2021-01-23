@@ -45,7 +45,7 @@ fieldset {
         float: left; }
         #header .inner .menu_web .util li a {
           display: block;
-          font: 12px/1 "arial";
+          font: 12px/1  'Khula', sans-serif;
           color: #999;
           padding: 0px 10px;
           border-right: 1px solid #aaa; }
@@ -59,7 +59,7 @@ fieldset {
         float: left; }
         #header .inner .menu_web #gnb li a {
           display: block;
-          font: bold 15px/1 "arial";
+          font: bold 15px/1  'Khula', sans-serif;
           color: #555;
           padding: 20px 40px;
           transition: all 0.5s; }
@@ -82,7 +82,7 @@ fieldset {
   overflow: hidden;
   padding-top: 250px; }
   #visual .inner {
-    width: 1180px;
+    width: 100%;
     margin: 0px auto;
     position: relative; }
 
@@ -104,70 +104,74 @@ fieldset {
     display: block;
     clear: both; }
   #info ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
+    width: 100%; }
+    #info ul::after {
+      content: "";
+      display: block;
+      clear: both; }
     #info ul li {
+      float: left;
       width: 49%;
-      border-top: 1px solid #ddd;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: space-between;
-      position: relative; }
+      margin-right: 2%;
+      border-top: 1px solid #ddd; }
+      #info ul li:nth-of-type(2n) {
+        margin-right: 0px; }
       #info ul li:nth-of-type(5), #info ul li:nth-of-type(6) {
         border-bottom: 1px solid #ddd; }
-      #info ul li .pictogram {
-        width: 30px;
-        height: 30px;
-        margin-left: 30px; }
-        #info ul li .pictogram svg {
-          width: 100%;
-          height: 100%;
-          overflow: visible; }
-          #info ul li .pictogram svg path {
-            stroke: #e2ab15;
-            stroke-width: 15;
-            fill: transparent;
-            transition: 1s; }
-            #info ul li .pictogram svg path:nth-of-type(1) {
-              stroke-dasharray: 1780;
-              stroke-dashoffset: 1780; }
-            #info ul li .pictogram svg path:nth-of-type(2) {
-              stroke-dasharray: 1380;
-              stroke-dashoffset: 1380; }
-            #info ul li .pictogram svg path:nth-of-type(3) {
-              stroke-dasharray: 1750;
-              stroke-dashoffset: 1750; }
-            #info ul li .pictogram svg path:nth-of-type(4) {
-              stroke-dasharray: 1700;
-              stroke-dashoffset: 1700; }
-            #info ul li .pictogram svg path:nth-of-type(5) {
-              stroke-dasharray: 1580;
-              stroke-dashoffset: 1580; }
-            #info ul li .pictogram svg path:nth-of-type(6) {
-              stroke-dasharray: 1770;
-              stroke-dashoffset: 1770; }
       #info ul li a {
         display: block;
         width: 100%;
         height: 100%;
         color: #555;
-        position: relative;
         padding: 20px; }
+        #info ul li a::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #info ul li a .pictogram {
+          width: 30px;
+          height: 30px;
+          margin-left: 20px;
+          float: left;
+          line-height: 55px; }
+          #info ul li a .pictogram svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible; }
+            #info ul li a .pictogram svg path {
+              stroke: #e2ab15;
+              stroke-width: 15;
+              fill: transparent;
+              transition: 1s; }
+              #info ul li a .pictogram svg path:nth-of-type(1) {
+                stroke-dasharray: 1780;
+                stroke-dashoffset: 1780; }
+              #info ul li a .pictogram svg path:nth-of-type(2) {
+                stroke-dasharray: 1380;
+                stroke-dashoffset: 1380; }
+              #info ul li a .pictogram svg path:nth-of-type(3) {
+                stroke-dasharray: 1750;
+                stroke-dashoffset: 1750; }
+              #info ul li a .pictogram svg path:nth-of-type(4) {
+                stroke-dasharray: 1700;
+                stroke-dashoffset: 1700; }
+              #info ul li a .pictogram svg path:nth-of-type(5) {
+                stroke-dasharray: 1580;
+                stroke-dashoffset: 1580; }
+              #info ul li a .pictogram svg path:nth-of-type(6) {
+                stroke-dasharray: 1770;
+                stroke-dashoffset: 1770; }
         #info ul li a span {
-          margin-left: 30px;
-          font: bold 14px/50px 'Noto Sans KR', sans-serif;
-          flex: 3; }
+          margin-left: 40px;
+          font: bold 14px/40px 'Noto Sans KR', sans-serif;
+          float: left;
+          margin-right: 30px; }
         #info ul li a p {
           display: inline-block;
           font: bold 12px/1.5 'Noto Sans KR', sans-serif;
-          flex: 2;
-          position: absolute;
-          top: 50%;
-          left: 200px;
-          margin-top: -20px;
-          margin-right: 22px; }
+          width: 62%;
+          float: right;
+          color: #777; }
 
 #story {
   padding: 100px 0px 120px;
@@ -219,8 +223,8 @@ fieldset {
           background: #000;
           position: absolute;
           bottom: 0px;
-          left: 452px;
-          margin: -4px auto;
+          right: 0px;
+          margin: -3px auto;
           opacity: 0;
           transition: 0.5s;
           text-align: right; }
@@ -556,7 +560,7 @@ fieldset {
         clear: both; }
       #footer .inner .upper h1 {
         float: left;
-        font: bold 24px/1 "arial";
+        font: bold 24px/1 'Khula', sans-serif;
         color: #666; }
       #footer .inner .upper ul {
         float: right; }
@@ -564,7 +568,7 @@ fieldset {
           float: left;
           margin-left: 20px; }
           #footer .inner .upper ul li a {
-            font: bold 14px/1 "arial";
+            font: bold 14px/1 'Khula', sans-serif;
             color: #666; }
     #footer .inner .lower {
       width: 100%;
@@ -604,16 +608,18 @@ fieldset {
       margin: 0px auto; }
     #info h2 {
       margin-bottom: 50px; }
-    #info ul li a {
-      padding: 15px 20px;
-      position: relative; }
-      #info ul li a span {
-        margin-left: 10px;
-        font: bold 14px/50px 'Noto Sans KR', sans-serif; }
-      #info ul li a p {
-        left: 130px;
-        margin-right: 10px;
-        font: bold 12px/1.5 'Noto Sans KR', sans-serif; }
+    #info ul li a .pictogram {
+      line-height: 80px; }
+    #info ul li a span {
+      margin-left: 40px;
+      font: bold 14px/40px 'Noto Sans KR', sans-serif;
+      float: left;
+      margin-right: 0px; }
+    #info ul li a p {
+      display: inline-block;
+      width: 60%;
+      float: left;
+      margin-left: 90px; }
 
   #story {
     padding: 70px 20px; }
@@ -680,13 +686,15 @@ fieldset {
     #news .inner {
       width: 100%;
       padding: 0px 20px; }
-      #news .inner ul li a {
-        display: flex;
-        flex-wrap: nowrap; }
-        #news .inner ul li a span:nth-of-type(2) {
-          display: none; }
-        #news .inner ul li a p {
-          font: 14px/1.3  'Khula', sans-serif; }
+      #news .inner ul li a span:nth-of-type(1) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      #news .inner ul li a span:nth-of-type(2) {
+        display: none; }
+      #news .inner ul li a p {
+        font: 14px/1.3  'Khula', sans-serif;
+        margin-left: 90px; }
 
   #footer {
     padding: 80px 30px;
@@ -710,5 +718,104 @@ fieldset {
         text-align: center; }
       #footer .inner .lower p {
         text-align: center; } }
+@media screen and (max-width: 539px) {
+  #visual {
+    height: 300px; }
+
+  #info {
+    padding: 50px 20px 70px; }
+    #info h1 {
+      font: normal 25px/1 'Khula', sans-serif;
+      text-align: center;
+      margin-bottom: 20px; }
+    #info h2 {
+      font: normal 14px/1 'Noto Sans KR', sans-serif;
+      text-align: center;
+      margin-bottom: 70px; }
+    #info ul li a {
+      padding: 10px; }
+      #info ul li a .pictogram {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+        line-height: 50px; }
+      #info ul li a span {
+        margin-left: 25px;
+        font: bold 12px/40px 'Noto Sans KR', sans-serif;
+        float: left;
+        margin-right: 0px; }
+      #info ul li a p {
+        display: none; }
+
+  #story {
+    padding: 70px 20px;
+    position: relative; }
+    #story .inner .left {
+      width: 100%;
+      margin-right: 0%;
+      padding: 0px; }
+    #story .inner .right {
+      position: absolute;
+      bottom: 0px; }
+      #story .inner .right img {
+        display: none; }
+
+  #brand {
+    padding: 70px 20px; }
+    #brand .inner {
+      width: 100%; }
+      #brand .inner > p {
+        padding: 0px 20px;
+        margin-bottom: 30px; }
+      #brand .inner .wrap .brand1 {
+        padding: 55px 0px;
+        width: 80%;
+        height: 220px; }
+        #brand .inner .wrap .brand1 p {
+          font: bold 17px/1  'Khula', sans-serif; }
+      #brand .inner .wrap .wrap2 .brand2 {
+        width: 100%;
+        margin-top: 240px; }
+      #brand .inner .wrap .wrap2 .brand3 {
+        width: 100%;
+        height: 190px;
+        margin-top: 20px; }
+
+  #news .wrap {
+    margin-bottom: 20px; }
+    #news .wrap .banner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      bottom: 0px; }
+      #news .wrap .banner .list li a {
+        width: 330px;
+        height: 130px; }
+        #news .wrap .banner .list li a span:nth-of-type(2) {
+          bottom: -28px; }
+        #news .wrap .banner .list li a p {
+          display: none; }
+        #news .wrap .banner .list li a::after {
+          width: 290px; }
+      #news .wrap .banner .prev {
+        top: 33%; }
+      #news .wrap .banner .next {
+        top: 33%; }
+  #news .inner {
+    width: 100%;
+    padding: 0px 20px; }
+    #news .inner ul li a span:nth-of-type(1) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    #news .inner ul li a span:nth-of-type(2) {
+      display: none; }
+    #news .inner ul li a p {
+      font: 14px/1.3  'Khula', sans-serif;
+      margin-left: 90px; }
+
+  #footer {
+    padding: 60px 30px; } }
 
 /*# sourceMappingURL=style.css.map */
