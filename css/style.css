@@ -35,7 +35,7 @@ fieldset {
       left: 0px;
       bottom: 15px; }
       #header .inner h1 a {
-        font: bold 24px/1 "arial";
+        font: bold 24px/1 'Khula', sans-serif;
         color: #444; }
     #header .inner .menu_web .util {
       position: absolute;
@@ -260,53 +260,57 @@ fieldset {
     #brand .inner .wrap {
       position: relative;
       text-align: center;
-      margin: 0px auto; }
+      margin: 0px auto;
+      position: relative; }
       #brand .inner .wrap::after {
         content: "";
         display: block;
         clear: both; }
-      #brand .inner .wrap article {
+      #brand .inner .wrap .brand1 {
+        padding: 90px 0px;
+        width: 800px;
+        height: 300px;
+        background: url(../img/brand1.jpg) no-repeat center/cover;
+        transition: 0.5s;
         float: left;
-        margin: 0px auto; }
-        #brand .inner .wrap article span {
+        margin-bottom: 20px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%); }
+        #brand .inner .wrap .brand1 span {
           font: 12px/1 'Khula', sans-serif;
           color: #fff; }
-        #brand .inner .wrap article p {
+        #brand .inner .wrap .brand1 p {
           font: bold 20px/1 'Khula', sans-serif;
           color: #fff;
           margin-top: 10px; }
-        #brand .inner .wrap article.brand1 {
-          padding: 90px 0px;
-          width: 800px;
-          height: 300px;
-          margin-bottom: 20px;
-          margin-left: 190px;
-          position: relative;
-          background: url(../img/brand1.jpg) no-repeat center/cover;
-          transition: 0.5s; }
-          #brand .inner .wrap article.brand1 a {
-            display: block;
-            width: 100px;
-            height: 25px;
-            margin: 0px auto;
-            font: bold 10px/25px 'Noto Sans KR', sans-serif;
-            color: #fff;
-            border: 1px solid #fff;
-            margin-top: 25px;
-            transition: 0.5s;
-            box-sizing: content-box; }
-            #brand .inner .wrap article.brand1 a:hover {
-              background: #fff;
-              color: #000; }
-        #brand .inner .wrap article.brand2 {
+        #brand .inner .wrap .brand1 a {
+          display: block;
+          width: 100px;
+          height: 25px;
+          margin: 0px auto;
+          font: bold 10px/25px 'Noto Sans KR', sans-serif;
+          color: #fff;
+          border: 1px solid #fff;
+          margin-top: 25px;
+          transition: 0.5s;
+          box-sizing: content-box; }
+          #brand .inner .wrap .brand1 a:hover {
+            background: #fff;
+            color: #000; }
+      #brand .inner .wrap .wrap2 {
+        width: 800px;
+        margin: 0px auto; }
+        #brand .inner .wrap .wrap2 .brand2 {
           padding: 55px 0px;
           width: 390px;
           height: 200px;
-          margin-left: 190px;
-          margin-right: 20px;
           background: url(../img/brand2.jpg) no-repeat center/cover;
-          position: relative; }
-          #brand .inner .wrap article.brand2 .frame {
+          position: relative;
+          float: left;
+          margin-top: 320px; }
+          #brand .inner .wrap .wrap2 .brand2 .frame {
             background: #fff;
             width: 300px;
             height: 130px;
@@ -314,20 +318,20 @@ fieldset {
             position: absolute;
             top: 40px;
             left: 45px; }
-            #brand .inner .wrap article.brand2 .frame span {
+            #brand .inner .wrap .wrap2 .brand2 .frame span {
               font: 12px/1 'Khula', sans-serif;
-              margin-bottom: 10px;
               color: #000; }
-            #brand .inner .wrap article.brand2 .frame p {
+            #brand .inner .wrap .wrap2 .brand2 .frame p {
               font: bold 16px/1 'Noto Sans KR', sans-serif;
               margin-bottom: 10px;
-              color: #000; }
-            #brand .inner .wrap article.brand2 .frame a {
+              color: #000;
+              margin-top: 7px; }
+            #brand .inner .wrap .wrap2 .brand2 .frame a {
               font: bold 10px/1 'Noto Sans KR', sans-serif;
               color: #aaa;
               position: relative;
               transition: 0.5s; }
-              #brand .inner .wrap article.brand2 .frame a::after {
+              #brand .inner .wrap .wrap2 .brand2 .frame a::after {
                 content: "";
                 display: block;
                 width: 0px;
@@ -339,32 +343,36 @@ fieldset {
                 margin: -2px auto;
                 opacity: 0;
                 transition: 0.5s; }
-              #brand .inner .wrap article.brand2 .frame a:hover {
+              #brand .inner .wrap .wrap2 .brand2 .frame a:hover {
                 color: #000; }
-                #brand .inner .wrap article.brand2 .frame a:hover::after {
+                #brand .inner .wrap .wrap2 .brand2 .frame a:hover::after {
                   width: 49px;
                   opacity: 1; }
-        #brand .inner .wrap article.brand3 {
+        #brand .inner .wrap .wrap2 .brand3 {
           padding: 60px 0px;
           width: 390px;
           height: 200px;
           margin-right: 20px;
           position: relative;
-          background: url(../img/brand.jpg) no-repeat center/cover; }
-          #brand .inner .wrap article.brand3 span {
+          background: url(../img/brand.jpg) no-repeat center/cover;
+          float: left;
+          margin: 0px auto;
+          float: right;
+          margin-top: 320px; }
+          #brand .inner .wrap .wrap2 .brand3 span {
             font: 12px/1  'Khula', sans-serif;
-            margin-bottom: 10px;
             color: #fff; }
-          #brand .inner .wrap article.brand3 p {
+          #brand .inner .wrap .wrap2 .brand3 p {
             font: bold 16px/1  'Khula', sans-serif;
             margin-bottom: 10px;
-            color: #fff; }
-          #brand .inner .wrap article.brand3 a {
+            color: #fff;
+            margin-top: 7px; }
+          #brand .inner .wrap .wrap2 .brand3 a {
             font: bold 10px/1  'Noto Sans KR', sans-serif;
             color: #ccc;
             position: relative;
             transition: 0.5s; }
-            #brand .inner .wrap article.brand3 a::after {
+            #brand .inner .wrap .wrap2 .brand3 a::after {
               content: "";
               display: block;
               width: 0px;
@@ -376,9 +384,9 @@ fieldset {
               margin: -2px auto;
               opacity: 0;
               transition: 0.5s; }
-            #brand .inner .wrap article.brand3 a:hover {
+            #brand .inner .wrap .wrap2 .brand3 a:hover {
               color: #fff; }
-              #brand .inner .wrap article.brand3 a:hover::after {
+              #brand .inner .wrap .wrap2 .brand3 a:hover::after {
                 width: 49px;
                 opacity: 1; }
 
@@ -635,142 +643,35 @@ fieldset {
   #brand {
     padding: 100px 0px; }
     #brand .inner {
-      width: 1180px;
-      margin: 0px auto; }
-      #brand .inner h1 {
-        font: normal 30px/1 'Khula', sans-serif;
-        text-align: center;
-        margin-bottom: 20px; }
+      width: 100%; }
       #brand .inner > p {
-        font: normal 14px/1.5 'Khula', sans-serif;
-        text-align: center;
-        padding: 0px 250px;
-        color: #777;
+        padding: 0px 150px;
         margin-bottom: 50px; }
-      #brand .inner .wrap {
-        position: relative;
-        text-align: center;
-        margin: 0px auto; }
-        #brand .inner .wrap::after {
-          content: "";
-          display: block;
-          clear: both; }
-        #brand .inner .wrap article {
-          float: left;
-          margin: 0px auto; }
-          #brand .inner .wrap article span {
-            font: 12px/1 'Khula', sans-serif;
-            color: #fff; }
-          #brand .inner .wrap article p {
-            font: bold 20px/1 'Khula', sans-serif;
-            color: #fff;
-            margin-top: 10px; }
-          #brand .inner .wrap article.brand1 {
-            padding: 90px 0px;
-            width: 800px;
-            height: 300px;
-            margin-bottom: 20px;
-            margin-left: 190px;
-            position: relative;
-            background: url(../img/brand1.jpg) no-repeat center/cover;
-            transition: 0.5s; }
-            #brand .inner .wrap article.brand1 a {
-              display: block;
-              width: 100px;
-              height: 25px;
-              margin: 0px auto;
-              font: bold 10px/25px 'Noto Sans KR', sans-serif;
-              color: #fff;
-              border: 1px solid #fff;
-              margin-top: 25px;
-              transition: 0.5s;
-              box-sizing: content-box; }
-              #brand .inner .wrap article.brand1 a:hover {
-                background: #fff;
-                color: #000; }
-          #brand .inner .wrap article.brand2 {
-            padding: 55px 0px;
-            width: 390px;
-            height: 200px;
-            margin-left: 190px;
-            margin-right: 20px;
-            background: url(../img/brand2.jpg) no-repeat center/cover;
-            position: relative; }
-            #brand .inner .wrap article.brand2 .frame {
-              background: #fff;
-              width: 300px;
-              height: 130px;
-              padding: 20px;
-              position: absolute;
-              top: 40px;
-              left: 45px; }
-              #brand .inner .wrap article.brand2 .frame span {
-                font: 12px/1 'Khula', sans-serif;
-                margin-bottom: 10px;
-                color: #000; }
-              #brand .inner .wrap article.brand2 .frame p {
-                font: bold 16px/1 'Noto Sans KR', sans-serif;
-                margin-bottom: 10px;
-                color: #000; }
-              #brand .inner .wrap article.brand2 .frame a {
-                font: bold 10px/1 'Noto Sans KR', sans-serif;
-                color: #aaa;
-                position: relative;
-                transition: 0.5s; }
-                #brand .inner .wrap article.brand2 .frame a::after {
-                  content: "";
-                  display: block;
-                  width: 0px;
-                  height: 1px;
-                  background: #555;
-                  position: absolute;
-                  bottom: 0px;
-                  left: 0px;
-                  margin: -2px auto;
-                  opacity: 0;
-                  transition: 0.5s; }
-                #brand .inner .wrap article.brand2 .frame a:hover {
-                  color: #000; }
-                  #brand .inner .wrap article.brand2 .frame a:hover::after {
-                    width: 49px;
-                    opacity: 1; }
-          #brand .inner .wrap article.brand3 {
-            padding: 60px 0px;
-            width: 390px;
-            height: 200px;
-            margin-right: 20px;
-            position: relative;
-            background: url(../img/brand.jpg) no-repeat center/cover; }
-            #brand .inner .wrap article.brand3 span {
-              font: 12px/1  'Khula', sans-serif;
-              margin-bottom: 10px;
-              color: #fff; }
-            #brand .inner .wrap article.brand3 p {
-              font: bold 16px/1  'Khula', sans-serif;
-              margin-bottom: 10px;
-              color: #fff; }
-            #brand .inner .wrap article.brand3 a {
-              font: bold 10px/1  'Noto Sans KR', sans-serif;
-              color: #ccc;
-              position: relative;
-              transition: 0.5s; }
-              #brand .inner .wrap article.brand3 a::after {
-                content: "";
-                display: block;
-                width: 0px;
-                height: 1px;
-                background: #fff;
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                margin: -2px auto;
-                opacity: 0;
-                transition: 0.5s; }
-              #brand .inner .wrap article.brand3 a:hover {
-                color: #fff; }
-                #brand .inner .wrap article.brand3 a:hover::after {
-                  width: 49px;
-                  opacity: 1; }
+      #brand .inner .wrap .brand1 {
+        padding: 80px 0px;
+        width: 80%;
+        height: 270px; }
+        #brand .inner .wrap .brand1 a {
+          margin-top: 15px; }
+      #brand .inner .wrap .wrap2 {
+        width: 80%; }
+        #brand .inner .wrap .wrap2 .brand2 {
+          padding: 40px 0px;
+          width: 48.5%;
+          height: 190px;
+          margin-top: 290px; }
+          #brand .inner .wrap .wrap2 .brand2 .frame {
+            width: 80%;
+            height: 130px;
+            padding: 20px;
+            position: absolute;
+            top: 30px;
+            left: 10%; }
+        #brand .inner .wrap .wrap2 .brand3 {
+          padding: 50px 0px;
+          width: 48.5%;
+          height: 190px;
+          margin-top: 290px; }
 
   #news {
     padding: 70px 0px; }
