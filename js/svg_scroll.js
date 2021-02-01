@@ -20,7 +20,7 @@ $(document).ready(function(){
 
             $("#info path").css({ 
                 strokeDashoffset :  result,
-                 fill : "rgb(226, 171, 21,"+bg+")"
+                fill : "rgb(226, 171, 21,"+bg+")"
                 // fill : "rgba(0,0,0,"+bg+")"
             });
         }
