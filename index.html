@@ -29,19 +29,39 @@
 	<figure id="visual">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide ">
-				<div class="inner box1"></div>
+				<div class="inner box1">
+					<img src="img/visual1.jpg" alt="">
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</div>
 			</div>
 			<div class="swiper-slide">
-				<div class="inner box2"></div>
+				<div class="inner box2">
+					<img src="img/visual2.jpg" alt="">
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</div>
 			</div>
 			<div class="swiper-slide">
-				<div class="inner box3"></div>
+				<div class="inner box3">
+					<img src="img/visual3.jpg" alt="">
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</div>
 			</div>
 			<div class="swiper-slide">
-				<div class="inner box4"></div>
+				<div class="inner box4">
+					<img src="img/visual4.jpg" alt="">
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</div>
 			</div>
 			<div class="swiper-slide">
-				<div class="inner box5"></div>
+				<div class="inner box5">
+					<img src="img/visual5.jpg" alt="">
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</div>
 			</div>
 		</div>	
 
@@ -271,7 +291,7 @@
 				</li>
 			</ul>
 
-			<a href="#">더보기</a>
+			<a href="#">View More</a>
 		</div>
 
 	</section>
@@ -345,12 +365,14 @@
 		});
 
 		swiper.autoplay.stop();
-		$(".auto li").eq(0).on("click",function(){
+		$(".auto li").eq(0).on("click",function(e){
+			e.preventDefault();
             swiper.autoplay.start();
             $(".auto li").removeClass("on");
             $(this).addClass("on");
         });
-        $(".auto li").eq(1).on("click",function(){
+        $(".auto li").eq(1).on("click",function(e){
+			e.preventDefault();
             swiper.autoplay.stop();
             $(".auto li").removeClass("on");
             $(this).addClass("on");
