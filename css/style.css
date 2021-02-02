@@ -194,7 +194,7 @@ fieldset {
             overflow: visible; }
             #info ul li a .pictogram svg path {
               stroke: #000;
-              stroke-width: 18;
+              stroke-width: 30;
               fill: transparent;
               transition: 1s; }
               #info ul li a .pictogram svg path:nth-of-type(1) {
