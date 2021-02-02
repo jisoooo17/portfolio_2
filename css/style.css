@@ -145,87 +145,87 @@ fieldset {
   #info .inner {
     width: 1180px;
     margin: 0px auto; }
-  #info h1 {
-    font: normal 30px/1 'Righteous', sans-serif;
-    text-align: center;
-    margin-bottom: 20px; }
-  #info h2 {
-    font: normal 14px/1 'Noto Sans KR', sans-serif;
-    text-align: center;
-    margin-bottom: 70px; }
-  #info::after {
-    content: "";
-    display: block;
-    clear: both; }
-  #info ul {
-    width: 100%; }
-    #info ul::after {
+    #info .inner h1 {
+      font: normal 30px/1 'Righteous', sans-serif;
+      text-align: center;
+      margin-bottom: 20px; }
+    #info .inner h2 {
+      font: normal 14px/1 'Noto Sans KR', sans-serif;
+      text-align: center;
+      margin-bottom: 70px; }
+    #info .inner::after {
       content: "";
       display: block;
       clear: both; }
-    #info ul li {
-      float: left;
-      width: 49%;
-      margin-right: 2%;
-      border-top: 1px solid #ddd; }
-      #info ul li:nth-of-type(2n) {
-        margin-right: 0px; }
-      #info ul li:nth-of-type(5), #info ul li:nth-of-type(6) {
-        border-bottom: 1px solid #ddd; }
-      #info ul li a {
+    #info .inner ul {
+      width: 100%; }
+      #info .inner ul::after {
+        content: "";
         display: block;
-        width: 100%;
-        height: 100%;
-        color: #555;
-        padding: 20px; }
-        #info ul li a::after {
-          content: "";
+        clear: both; }
+      #info .inner ul li {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+        border-top: 1px solid #ddd; }
+        #info .inner ul li:nth-of-type(2n) {
+          margin-right: 0px; }
+        #info .inner ul li:nth-of-type(5), #info .inner ul li:nth-of-type(6) {
+          border-bottom: 1px solid #ddd; }
+        #info .inner ul li a {
           display: block;
-          clear: both; }
-        #info ul li a .pictogram {
-          width: 30px;
-          height: 30px;
-          margin-left: 20px;
-          float: left;
-          line-height: 55px; }
-          #info ul li a .pictogram svg {
-            width: 100%;
-            height: 100%;
-            overflow: visible; }
-            #info ul li a .pictogram svg path {
-              stroke: #000;
-              stroke-width: 30;
-              fill: transparent;
-              transition: 1s; }
-              #info ul li a .pictogram svg path:nth-of-type(1) {
-                stroke-dasharray: 1780;
-                stroke-dashoffset: 1780; }
-              #info ul li a .pictogram svg path:nth-of-type(2) {
-                stroke-dasharray: 1380;
-                stroke-dashoffset: 1380; }
-              #info ul li a .pictogram svg path:nth-of-type(3) {
-                stroke-dasharray: 1750;
-                stroke-dashoffset: 1750; }
-              #info ul li a .pictogram svg path:nth-of-type(4) {
-                stroke-dasharray: 1700;
-                stroke-dashoffset: 1700; }
-              #info ul li a .pictogram svg path:nth-of-type(5) {
-                stroke-dasharray: 1580;
-                stroke-dashoffset: 1580; }
-              #info ul li a .pictogram svg path:nth-of-type(6) {
-                stroke-dasharray: 1770;
-                stroke-dashoffset: 1770; }
-        #info ul li a span {
-          margin-left: 40px;
-          font: bold 14px/40px 'Noto Sans KR', sans-serif;
-          float: left;
-          margin-right: 30px; }
-        #info ul li a p {
-          display: inline-block;
-          font: bold 12px/1.5 'Noto Sans KR', sans-serif;
-          width: 62%;
-          float: right;
-          color: #777; }
+          width: 100%;
+          height: 100%;
+          color: #555;
+          padding: 20px; }
+          #info .inner ul li a::after {
+            content: "";
+            display: block;
+            clear: both; }
+          #info .inner ul li a .pictogram {
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+            float: left;
+            line-height: 55px; }
+            #info .inner ul li a .pictogram svg {
+              width: 100%;
+              height: 100%;
+              overflow: visible; }
+              #info .inner ul li a .pictogram svg path {
+                stroke: #000;
+                stroke-width: 30;
+                fill: transparent;
+                transition: 1s; }
+                #info .inner ul li a .pictogram svg path:nth-of-type(1) {
+                  stroke-dasharray: 1780;
+                  stroke-dashoffset: 1780; }
+                #info .inner ul li a .pictogram svg path:nth-of-type(2) {
+                  stroke-dasharray: 1380;
+                  stroke-dashoffset: 1380; }
+                #info .inner ul li a .pictogram svg path:nth-of-type(3) {
+                  stroke-dasharray: 1750;
+                  stroke-dashoffset: 1750; }
+                #info .inner ul li a .pictogram svg path:nth-of-type(4) {
+                  stroke-dasharray: 1700;
+                  stroke-dashoffset: 1700; }
+                #info .inner ul li a .pictogram svg path:nth-of-type(5) {
+                  stroke-dasharray: 1580;
+                  stroke-dashoffset: 1580; }
+                #info .inner ul li a .pictogram svg path:nth-of-type(6) {
+                  stroke-dasharray: 1770;
+                  stroke-dashoffset: 1770; }
+          #info .inner ul li a span {
+            margin-left: 40px;
+            font: bold 14px/40px 'Noto Sans KR', sans-serif;
+            float: left;
+            margin-right: 30px; }
+          #info .inner ul li a p {
+            display: inline-block;
+            font: bold 12px/1.5 'Noto Sans KR', sans-serif;
+            width: 62%;
+            float: right;
+            color: #777; }
 
 #story {
   padding: 100px 0px 120px;
@@ -594,8 +594,7 @@ fieldset {
           display: inline-block; }
         #news .inner ul li a:hover {
           background: #ffd000;
-          color: #000;
-          border-bottom: 2px solid #000; }
+          color: #000; }
           #news .inner ul li a:hover span:nth-of-type(1) {
             border: 1px solid #000;
             color: #000;
@@ -691,20 +690,20 @@ fieldset {
     #info .inner {
       width: 100%;
       margin: 0px auto; }
-    #info h2 {
-      margin-bottom: 50px; }
-    #info ul li a .pictogram {
-      line-height: 80px; }
-    #info ul li a span {
-      margin-left: 40px;
-      font: bold 14px/40px 'Noto Sans KR', sans-serif;
-      float: left;
-      margin-right: 0px; }
-    #info ul li a p {
-      display: inline-block;
-      width: 60%;
-      float: left;
-      margin-left: 90px; }
+      #info .inner h2 {
+        margin-bottom: 50px; }
+      #info .inner ul li a .pictogram {
+        line-height: 80px; }
+      #info .inner ul li a span {
+        margin-left: 40px;
+        font: bold 14px/40px 'Noto Sans KR', sans-serif;
+        float: left;
+        margin-right: 0px; }
+      #info .inner ul li a p {
+        display: inline-block;
+        width: 60%;
+        float: left;
+        margin-left: 90px; }
 
   #story {
     padding: 70px 20px; }
@@ -851,27 +850,27 @@ fieldset {
 
   #info {
     padding: 50px 20px 70px; }
-    #info h1 {
+    #info .inner h1 {
       font: normal 25px/1 "Righteous", cursive;
       text-align: center;
       margin-bottom: 20px; }
-    #info h2 {
+    #info .inner h2 {
       font: normal 14px/1 'Noto Sans KR', sans-serif;
       text-align: center;
       margin-bottom: 70px; }
-    #info ul li a {
+    #info .inner ul li a {
       padding: 10px; }
-      #info ul li a .pictogram {
+      #info .inner ul li a .pictogram {
         width: 25px;
         height: 25px;
         margin-left: 5px;
         line-height: 50px; }
-      #info ul li a span {
+      #info .inner ul li a span {
         margin-left: 25px;
         font: bold 12px/40px 'Noto Sans KR', sans-serif;
         float: left;
         margin-right: 0px; }
-      #info ul li a p {
+      #info .inner ul li a p {
         display: none; }
 
   #story {
