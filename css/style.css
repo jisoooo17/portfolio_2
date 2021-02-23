@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Khula:wght@300&family=Noto+Sans+KR:wght@100&family=Righteous&display=swap");
 /* reset */
 * {
@@ -21,6 +22,18 @@ table {
 
 fieldset {
   border: none; }
+
+#skipNavi a {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background: #ffee00;
+  font: bold 14px/30px "맑은고딕";
+  color: #fff;
+  text-align: center;
+  left: 0px;
+  top: -30px;
+  z-index: 10; }
 
 #header {
   width: 100%;
