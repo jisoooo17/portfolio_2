@@ -64,6 +64,7 @@ $(document).ready(function(){
         $list.animate({marginLeft : -wid*2},speed,function(){
             $list.children("li").first().appendTo($list);
             $list.css({marginLeft : -wid});
+
             //next모션이 끝난직후 현재의 위치값을 다시 i값에 업데이트
             i = -wid;
             isDone = true;                   
@@ -79,6 +80,4 @@ $(document).ready(function(){
             isDone = true; 
         });
     }
-
-
 });

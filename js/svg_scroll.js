@@ -16,12 +16,9 @@ $(document).ready(function(){
 
             var bg = scroll/5000;            
 
-        //    if(bg > 0.8) bg = 0.8;
-
             $("#info path").css({ 
                 strokeDashoffset :  result,
                 fill : "rgb(226, 171, 21,"+bg+")"
-                // fill : "rgba(0,0,0,"+bg+")"
             });
         }
     })
