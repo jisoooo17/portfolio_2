@@ -942,27 +942,24 @@ fieldset {
         margin-top: 20px; }
 
   #news .wrap {
-    margin-bottom: 20px; }
-    #news .wrap .banner {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0px;
-      bottom: 0px; }
-      #news .wrap .banner .list li a {
-        width: 330px;
-        height: 130px; }
-        #news .wrap .banner .list li a span:nth-of-type(2) {
-          bottom: -28px; }
-        #news .wrap .banner .list li a p {
-          display: none; }
-        #news .wrap .banner .list li a::after {
-          height: 70%;
-          font: 14px/1 'Khula', sans-serif; }
-      #news .wrap .banner .prev {
-        top: 33%; }
-      #news .wrap .banner .next {
-        top: 33%; }
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 0px; }
+    #news .wrap .banner .list li a {
+      width: 40vh;
+      height: 20vh; }
+      #news .wrap .banner .list li a span:nth-of-type(2) {
+        bottom: -28px; }
+      #news .wrap .banner .list li a p {
+        display: none; }
+      #news .wrap .banner .list li a::after {
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%); }
+    #news .wrap .banner .prev {
+      top: 40%; }
+    #news .wrap .banner .next {
+      top: 40%; }
   #news .inner {
     width: 100%;
     padding: 0px 20px; }
