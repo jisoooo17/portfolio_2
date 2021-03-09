@@ -12,8 +12,14 @@ $(document).ready(function(){
     var isDone = true;
     var len = $list.children("li").length;
     var total_wid = wid * len;
+
+    // var curPos = getSlideWid();
     $list.css({width: total_wid, marginLeft: -wid});
     
+    // $(window).on("resize",function(){
+    //     curPos = getSlideWid();
+    //     $list.css({marginLeft : curPos})
+    // })
 
     //로딩시 자동롤링 시작
     timer = setInterval(move ,20);
@@ -58,6 +64,13 @@ $(document).ready(function(){
         } 
         $list.css({marginLeft : i});
     }
+
+    // function getSlideWid(){
+    //     var result = wid;
+    //     result = parseInt(result);
+    //     result = -result;
+    //     return result
+    // }
 
     //next함수정의
     function next(){
